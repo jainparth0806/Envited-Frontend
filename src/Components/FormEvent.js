@@ -93,12 +93,6 @@ export const FormEvent = () => {
           onChange={handleInputChange}
           value={data.avatar}
         />
-
-        <Link to={"/event"}>
-          <button class="form-field" type="submit">
-            Next
-          </button>
-        </Link>
       </form>
     </Form>
   );
