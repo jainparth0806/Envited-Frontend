@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Form from "./FormStyled";
-import { Link } from "react-router-dom";
 
 export const FormEvent = () => {
   const usersData = [
@@ -23,10 +22,10 @@ export const FormEvent = () => {
   };
   return (
     <Form>
-      <form class="register-form">
-        {/* Uncomment the next line to show the success message */}
-        {/* <div class="success-message">Success! Thank you for registering</div> */}
-        <label for="event-name">Event Name:</label>
+      <form class="register-form ">
+        <label for="event-name" style={{ fontSize: 20, fontWeight: "bold" }}>
+          Event Name:
+        </label>
         <input
           id="event-name"
           class="form-field"
@@ -36,9 +35,10 @@ export const FormEvent = () => {
           onChange={handleInputChange}
           value={data.eventName}
         />
-        {/* Uncomment the next line to show the error message */}
-        {/* <span id="first-name-error">Please enter a first name</span> */}
-        <label for="host-name">Host Name:</label>
+
+        <label for="host-name" style={{ fontSize: 20, fontWeight: "bold" }}>
+          Host Name:
+        </label>
         <input
           id="host-name"
           class="form-field"
@@ -48,9 +48,10 @@ export const FormEvent = () => {
           onChange={handleInputChange}
           value={data.hostName}
         />
-        {/* Uncomment the next line to show the error message */}
-        {/* <span id="last-name-error">Please enter a last name</span> */}
-        <label for="start">Start date:</label>
+
+        <label for="start" style={{ fontSize: 20, fontWeight: "bold" }}>
+          Start date:
+        </label>
         <input
           id="start"
           class="form-field"
@@ -61,7 +62,9 @@ export const FormEvent = () => {
           onChange={handleInputChange}
           value={data.eventStart}
         ></input>
-        <label for="start">End date:</label>
+        <label for="start" style={{ fontSize: 20, fontWeight: "bold" }}>
+          End date:
+        </label>
         <input
           id="end"
           class="form-field"
@@ -72,7 +75,9 @@ export const FormEvent = () => {
           onChange={handleInputChange}
           value={data.eventEnd}
         ></input>
-        <label for="Location-name">Location Name:</label>
+        <label for="Location-name" style={{ fontSize: 20, fontWeight: "bold" }}>
+          Location Name:
+        </label>
         <input
           id="Location-name"
           class="form-field"
@@ -82,7 +87,9 @@ export const FormEvent = () => {
           onChange={handleInputChange}
           value={data.locationName}
         />
-        <label for="avatar">Choose a profile picture:</label>
+        <label for="avatar" style={{ fontSize: 20, fontWeight: "bold" }}>
+          Choose a profile picture:
+        </label>
 
         <input
           id="avatar"

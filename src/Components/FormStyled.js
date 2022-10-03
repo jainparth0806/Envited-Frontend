@@ -23,7 +23,6 @@ const Form = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 10px;
   }
 
   .success-message {

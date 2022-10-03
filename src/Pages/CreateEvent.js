@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const CreateEvent = () => {
   return (
-    <div class="mx-5">
+    <div class="mx-5 px-60">
       {" "}
       <Link to={"/"}>
         {" "}
@@ -17,7 +17,7 @@ const CreateEvent = () => {
       </Link>
       <h1
         style={{ color: `#E87BF8` }}
-        class="mb-1 min-h-[90px] lg:min-h-[120px] text-3xl font-bold lg:mb-8 md:text-4xl lg:text-5xl xl:text-6xl"
+        class="mb-1 min-h-[90px] lg:min-h-[120px] text-3xl font-bold  md:text-4xl lg:text-5xl xl:text-6xl"
       >
         Create your event
       </h1>
